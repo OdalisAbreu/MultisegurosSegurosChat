@@ -2,16 +2,16 @@
 $fecha1 = $_GET['fecha1'];
 $fecha2 = $_GET['fecha2'];
 
-header("Content-Type: application/vnd.ms-excel");
-header("Expires: 0");
-header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
-header(
-	"content-disposition: attachment;filename=Reporte desde - " .
-		$fecha1 .
-		" - hasta - " .
-		$fecha2 .
-		".xls"
-);
+// header("Content-Type: application/vnd.ms-excel");
+// header("Expires: 0");
+// header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
+// header(
+// 	"content-disposition: attachment;filename=Reporte desde - " .
+// 		$fecha1 .
+// 		" - hasta - " .
+// 		$fecha2 .
+// 		".xls"
+// );
 
 session_start();
 
@@ -196,6 +196,7 @@ function CiudadRep($id)
 			$veh = explode("|", CrearVehiculo($u['id_vehiculo']));
 			//      print_r($u['serv_adc']);
 			$ServMonto = MontoPorServ($u['vigencia_poliza'], $u['serv_adc']);
+			echo $ServMonto;
 			//		$ServMonto = $u['serv_adc'];
 			$precio = $RepMontoSeguro;
 			$Tprecio += $precio;
