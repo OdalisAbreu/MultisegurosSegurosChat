@@ -68,21 +68,20 @@ function MontoPorServ($vigencia_poliza, $serv_adc)
 				"' LIMIT 1"
 		);
 		$rprec2 = mysql_fetch_array($qprec2);
-		print_r($rprec2);
 
-		if ($rprec2['id'] == 116 or $rprec2['id'] == 118) {
+		if ($rprec2['id'] == 116 or $rprec2['id'] == 118 or $rprec2['id'] == 126) {
 			$Servicios['casaConductor'] = $rprec2[$vigencia];
 		}
-		if ($rprec2['id'] == 101 or $rprec2['id'] == 119) {
+		if ($rprec2['id'] == 101 or $rprec2['id'] == 119 or $rprec2['id'] == 123) {
 			$Servicios['asistenciaVial'] = $rprec2[$vigencia];
 		}
-		if ($rprec2['id'] == 107 or $rprec2['id'] == 122) {
+		if ($rprec2['id'] == 107 or $rprec2['id'] == 122 or $rprec2['id'] == 124) {
 			$Servicios['accidentesPersonales'] = $rprec2[$vigencia];
 		}
 		if ($rprec2['id'] == 113 or $rprec2['id'] == 120) {
 			$Servicios['planPremium'] = $rprec2[$vigencia];
 		}
-		if ($rprec2['id'] == 108 or $rprec2['id'] == 121) {
+		if ($rprec2['id'] == 108 or $rprec2['id'] == 121 or $rprec2['id'] == 125) {
 			$Servicios['ultimosGastos'] = $rprec2[$vigencia];
 		}
 	}
@@ -195,9 +194,9 @@ function CiudadRep($id)
 			$t++;
 			$RepMontoSeguro = RepMontoSeguro($u['id']);
 			$veh = explode("|", CrearVehiculo($u['id_vehiculo']));
-			print_r($u['serv_adc']);
+			//print_r($u['serv_adc']);
 			$ServMonto = MontoPorServ($u['vigencia_poliza'], $u['serv_adc']);
-			print_r($ServMonto);
+			//print_r($ServMonto);
 			//		$ServMonto = $u['serv_adc'];
 			$precio = $RepMontoSeguro;
 			$Tprecio += $precio;
