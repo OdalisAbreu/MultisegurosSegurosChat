@@ -2,16 +2,16 @@
 $fecha1 = $_GET['fecha1'];
 $fecha2 = $_GET['fecha2'];
 
-// header("Content-Type: application/vnd.ms-excel");
-// header("Expires: 0");
-// header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
-// header(
-// 	"content-disposition: attachment;filename=Reporte desde - " .
-// 		$fecha1 .
-// 		" - hasta - " .
-// 		$fecha2 .
-// 		".xls"
-// );
+header("Content-Type: application/vnd.ms-excel");
+header("Expires: 0");
+header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
+header(
+	"content-disposition: attachment;filename=Reporte desde - " .
+		$fecha1 .
+		" - hasta - " .
+		$fecha2 .
+		".xls"
+);
 
 session_start();
 
@@ -121,10 +121,10 @@ function CiudadRep($id)
 
 	<tr>
 		<td colspan="3">
-			<!-- <img src="https://multiseguros.com.do/SegurosChat/images/sc_ic.png" width="400"> -->
+			<!-- VALIDO PARA VISTA DE ADMINISTRADOR -->
 		</td>
 		<td colspan="<?= $colspan2 ?>" align="center">
-			<b style="font-size:23px">REPORTE DIARIO DE VENTAS 2</b>
+			<b style="font-size:23px">REPORTE DIARIO DE VENTAS</b>
 			<b style="font-size:18px"><br><?= $nombre ?>
 				<br><b>Desde:</b>&nbsp;&nbsp;<?= $fecha1 ?>&nbsp;&nbsp;&nbsp;<b>Hasta:</b>&nbsp;&nbsp;<?= $fecha2 ?>
 			</b>

@@ -65,7 +65,7 @@ function CiudadRep($id)
       <b style="font-size: 70px; color: #d9261c;">Multi</b><b style="font-size: 70px; color: #828282;">Seguros</b>
     </td>
     <td colspan="<?= $colspan2 ?>" align="center">
-      <b style="font-size:23px">REPORTE DIARIO DE VENTAS 5</b>
+      <b style="font-size:23px">REPORTE DIARIO DE VENTAS</b>
       <b style="font-size:18px"><br><?= $nombre ?>
         <br><b>Desde:</b>&nbsp;&nbsp;<?= $fecha1 ?>&nbsp;&nbsp;&nbsp;<b>Hasta:</b>&nbsp;&nbsp;<?= $fecha2 ?>
       </b>
