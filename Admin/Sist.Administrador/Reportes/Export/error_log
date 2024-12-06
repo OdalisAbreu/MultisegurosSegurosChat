@@ -1,0 +1,13 @@
+[30-Jun-2023 22:46:00 America/Santo_Domingo] PHP Fatal error:  Unsupported operand types in /home/multiseguroscom/public_html/SegurosChat/Admin/Sist.Administrador/Reportes/Export/Excel.php on line 165
+[30-Jun-2023 22:46:03 America/Santo_Domingo] PHP Fatal error:  Unsupported operand types in /home/multiseguroscom/public_html/SegurosChat/Admin/Sist.Administrador/Reportes/Export/Excel.php on line 165
+[30-Jun-2023 22:48:35 America/Santo_Domingo] PHP Fatal error:  Unsupported operand types in /home/multiseguroscom/public_html/SegurosChat/Admin/Sist.Administrador/Reportes/Export/Excel.php on line 165
+[30-Jun-2023 22:52:57 America/Santo_Domingo] PHP Fatal error:  Unsupported operand types in /home/multiseguroscom/public_html/SegurosChat/Admin/Sist.Administrador/Reportes/Export/Excel.php on line 168
+[30-Jun-2023 22:54:33 America/Santo_Domingo] PHP Fatal error:  Unsupported operand types in /home/multiseguroscom/public_html/SegurosChat/Admin/Sist.Administrador/Reportes/Export/Excel.php on line 168
+[30-Jun-2023 22:54:35 America/Santo_Domingo] PHP Fatal error:  Unsupported operand types in /home/multiseguroscom/public_html/SegurosChat/Admin/Sist.Administrador/Reportes/Export/Excel.php on line 168
+[30-Jun-2023 22:56:04 America/Santo_Domingo] PHP Fatal error:  Unsupported operand types in /home/multiseguroscom/public_html/SegurosChat/Admin/Sist.Administrador/Reportes/Export/Excel.php on line 168
+[30-Jun-2023 23:01:03 America/Santo_Domingo] PHP Fatal error:  Unsupported operand types in /home/multiseguroscom/public_html/SegurosChat/Admin/Sist.Administrador/Reportes/Export/Excel.php on line 168
+[30-Jun-2023 23:13:04 America/Santo_Domingo] PHP Fatal error:  Unsupported operand types in /home/multiseguroscom/public_html/SegurosChat/Admin/Sist.Administrador/Reportes/Export/Excel.php on line 168
+[01-Jul-2023 14:40:32 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/multiseguroscom/public_html/SegurosChat/Admin/Sist.Administrador/Reportes/Export/Excel.php on line 283
+[01-Jul-2023 14:40:36 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/multiseguroscom/public_html/SegurosChat/Admin/Sist.Administrador/Reportes/Export/Excel.php on line 283
+[01-Jul-2023 14:40:43 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/multiseguroscom/public_html/SegurosChat/Admin/Sist.Administrador/Reportes/Export/Excel.php on line 283
+[02-Oct-2023 12:39:00 America/Santo_Domingo] PHP Warning:  number_format() expects parameter 1 to be double, string given in /home/multiseguroscom/public_html/SegurosChat/incluidos/conexion_inc.php on line 32

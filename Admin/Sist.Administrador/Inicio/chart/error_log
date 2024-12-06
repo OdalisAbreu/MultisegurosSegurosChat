@@ -1,0 +1,1 @@
+[10-May-2024 22:44:15 America/Santo_Domingo] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/multiseguroscom/public_html/SegurosChat/Admin/Sist.Administrador/Inicio/chart/rep_ventas.php on line 43

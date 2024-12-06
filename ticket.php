@@ -1,0 +1,1 @@
+<?  header("Location: Admin/Sist.Sucursal/Seguro/poliza.php?id=".$_GET['id']); ?>

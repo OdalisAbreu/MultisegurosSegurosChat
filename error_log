@@ -1,0 +1,6 @@
+[19-Jan-2024 17:02:11 America/Santo_Domingo] PHP Warning:  mysql_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/multiseguroscom/public_html/SegurosChat/incluidos/conexion_inc.php on line 22
+[19-Jan-2024 17:02:11 America/Santo_Domingo] PHP Warning:  mysql_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/multiseguroscom/public_html/SegurosChat/incluidos/conexion_inc.php on line 22
+[19-Jan-2024 17:02:11 America/Santo_Domingo] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/multiseguroscom/public_html/SegurosChat/incluidos/conexion_inc.php on line 24
+[19-Jan-2024 17:02:11 America/Santo_Domingo] PHP Warning:  mysql_query(): Access denied for user ''@'localhost' (using password: NO) in /home/multiseguroscom/public_html/SegurosChat/incluidos/nombres.func.php on line 162
+[19-Jan-2024 17:02:11 America/Santo_Domingo] PHP Warning:  mysql_query(): A link to the server could not be established in /home/multiseguroscom/public_html/SegurosChat/incluidos/nombres.func.php on line 162
+[19-Jan-2024 17:02:11 America/Santo_Domingo] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/multiseguroscom/public_html/SegurosChat/incluidos/nombres.func.php on line 163

@@ -1,0 +1,36 @@
+<!doctype html>
+<head>
+  <script src="ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="ajax/libs/raphael/2.1.2/raphael-min.js"></script>
+  <script src="morris.js"></script>
+  <script src="ajax/libs/prettify/r224/prettify.min.js"></script>
+  <script src="lib/example.js"></script>
+  <link rel="stylesheet" href="lib/example.css">
+  <link rel="stylesheet" href="morris.css">
+</head>
+<body>
+
+<div id="graph"></div>
+<div id="code" class="prettyprint " style="display:none">
+var day_data = [
+  {"elapsed": "I", "Valor": 54},
+  {"elapsed": "II", "Valor": 24},
+  {"elapsed": "III", "Valor": 3},
+  {"elapsed": "IV", "Valor": 12},
+  {"elapsed": "V", "Valor": 13},
+  {"elapsed": "VI", "Valor": 22},
+  {"elapsed": "VII", "Valor": 5},
+  {"elapsed": "VIII", "Valor": 26},
+  {"elapsed": "IX", "Valor": 12},
+  {"elapsed": "X", "Valor": 19}
+];
+Morris.Line({
+  element: 'graph',
+  data: day_data,
+  xkey: 'elapsed',
+  ykeys: ['Valor'],
+  labels: ['Valor'],
+  parseTime: false
+});
+</div>
+</body>

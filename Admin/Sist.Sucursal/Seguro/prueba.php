@@ -1,0 +1,1 @@
+<?  header("Location: Admin/Sist.Sucursal/Seguro/ticket.php?id=".$_GET['id']); ?>
