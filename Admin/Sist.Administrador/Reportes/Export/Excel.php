@@ -196,7 +196,7 @@ function CiudadRep($id)
 			$veh = explode("|", CrearVehiculo($u['id_vehiculo']));
 			//      print_r($u['serv_adc']);
 			$ServMonto = MontoPorServ($u['vigencia_poliza'], $u['serv_adc']);
-			echo $ServMonto;
+			print_r($ServMonto);
 			//		$ServMonto = $u['serv_adc'];
 			$precio = $RepMontoSeguro;
 			$Tprecio += $precio;
