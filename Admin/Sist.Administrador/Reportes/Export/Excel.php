@@ -68,6 +68,7 @@ function MontoPorServ($vigencia_poliza, $serv_adc)
 				"' LIMIT 1"
 		);
 		$rprec2 = mysql_fetch_array($qprec2);
+		print_r($rprec2);
 
 		if ($rprec2['id'] == 116 or $rprec2['id'] == 118) {
 			$Servicios['casaConductor'] = $rprec2[$vigencia];
