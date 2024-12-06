@@ -158,7 +158,13 @@ function CiudadRep($id)
 		<td style="background-color:#1d4ed7;">RC2</td>
 		<td style="background-color:#1d4ed7;">FJ</td>
 		<td style="background-color:#1d4ed7;">Cod. Confirmación</td>
-		<td style="background-color:#1d4ed7;">Casa del Conductor</td>
+		<?php
+		if ($_GET['aseguradora'] == 7 or $_GET['aseguradora'] == 5) {
+			echo '<td style="background-color:#1d4ed7;">Centro Del Automovilista</td>';
+		} else {
+			echo '<td style="background-color:#1d4ed7;">Casa del Conductor</td>';
+		}
+		?>
 		<td style="background-color:#1d4ed7;">Asistencia Vial (Grua)</td>
 		<td style="background-color:#1d4ed7;">Accidentes Personales</td>
 		<td style="background-color:#1d4ed7;">Plan Premium</td>
