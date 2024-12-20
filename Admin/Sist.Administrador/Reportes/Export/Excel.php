@@ -152,6 +152,11 @@ function CiudadRep($id)
 		<td style="background-color:#1d4ed7;">Fecha Emisi&oacute;n</td>
 		<td style="background-color:#1d4ed7;">Inicio Vigencia</td>
 		<td style="background-color:#1d4ed7;">Fin Vigencia</td>
+		<?php
+		if ($u['id_aseg']  == '5') {
+			echo '<td style="background-color:#1d4ed7;">USO</td>';
+		}
+		?>
 		<td style="background-color:#1d4ed7;">DPA</td>
 		<td style="background-color:#1d4ed7;">AP</td>
 		<td style="background-color:#1d4ed7;">RC</td>
@@ -299,6 +304,12 @@ function CiudadRep($id)
 				<td align="center" style="width:150px"><?= FechaReporte(
 															$u['fecha_fin']
 														) ?></td>
+
+				<?php
+				if ($u['id_aseg']  == '5') {
+					echo '<td align="center" style="width:150px">Privado</td>';
+				}
+				?>
 				<td style="padding-left: 10px;padding-right: 10px;"><?= $dpa ?></td>
 				<td style="padding-left: 10px;padding-right: 10px;"><?= $ap ?></td>
 				<td style="padding-left: 10px;padding-right: 10px;"><?= $rc ?></td>
