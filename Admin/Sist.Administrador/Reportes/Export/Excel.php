@@ -278,8 +278,8 @@ function CiudadRep($id)
 			<tr style="font-size:12px; text-align:left">
 				<td><b><?= $u['id'] ?></b></td>
 				<td><?= $prefi ?></td>
-				<td style=" <?= $clase ?>"><?= NombreSeguroS($u['id_aseg']) + $dist_id ?></td>
-				<td><?= $cliente[0] ?></td>
+				<td style=" <?= $clase ?>"><?= NombreSeguroS($u['id_aseg']) + ' ' +  $dist_id ?></td>
+				<td><?= $cliente[0] + ' ' + $u['id_aseg']  ?></td>
 				<td><?= $cliente[1] ?></td>
 				<td><?= CrearCedula($cliente[2]) ?></td>
 				<td><?= $cliente[6] ?></td>
