@@ -223,7 +223,7 @@ function CiudadRep($id)
 			$totalPoliza = intval($totalGeneral) - intval($totalServicios);
 
 			$dd = explode("|", VerVariable($u['serv_adc']));
-			if ($dist_id == '5' || $dist_id == '7') {
+			if ($u['id_aseg']  == '5' || $u['id_aseg'] == '7') {
 				$dpa_1 = 500000;
 				$ap_1 = 500000;
 				$rc_1 = 500000;
@@ -278,7 +278,7 @@ function CiudadRep($id)
 			<tr style="font-size:12px; text-align:left">
 				<td><b><?= $u['id'] ?></b></td>
 				<td><?= $prefi ?></td>
-				<td style=" <?= $clase ?>"><?= NombreSeguroS($u['id_aseg']) ?></td>
+				<td style=" <?= $clase ?>"><?= NombreSeguroS($u['id_aseg']) + $dist_id ?></td>
 				<td><?= $cliente[0] ?></td>
 				<td><?= $cliente[1] ?></td>
 				<td><?= CrearCedula($cliente[2]) ?></td>
