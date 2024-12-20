@@ -223,12 +223,12 @@ function CiudadRep($id)
 			$totalPoliza = intval($totalGeneral) - intval($totalServicios);
 
 			$dd = explode("|", VerVariable($u['serv_adc']));
-			if ($dist_id == '5' or $dist_id == '7') {
-				$dpa_1 = '500000';
-				$ap_1 = '500000';
-				$rc_1 = '500000';
-				$rc2_1 = '1000000';
-				$fj_1 = '1000000';
+			if ($dist_id == '5' || $dist_id == '7') {
+				$dpa_1 = 500000;
+				$ap_1 = 500000;
+				$rc_1 = 500000;
+				$rc2_1 = 1000000;
+				$fj_1 = 1000000;
 			} else {
 				$dpa_1 = $dd[0];
 				$ap_1 = $dd[1];
