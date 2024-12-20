@@ -153,7 +153,7 @@ function CiudadRep($id)
 		<td style="background-color:#1d4ed7;">Inicio Vigencia</td>
 		<td style="background-color:#1d4ed7;">Fin Vigencia</td>
 		<?php
-		if ($u['id_aseg']  == '5') {
+		if ($_GET['aseguradora']  == '5') {
 			echo '<td style="background-color:#1d4ed7;">USO</td>';
 		}
 		?>
@@ -306,7 +306,7 @@ function CiudadRep($id)
 														) ?></td>
 
 				<?php
-				if ($u['id_aseg']  == '5') {
+				if ($_GET['aseguradora']  == '5') {
 					echo '<td align="center" style="width:150px">Privado</td>';
 				}
 				?>
