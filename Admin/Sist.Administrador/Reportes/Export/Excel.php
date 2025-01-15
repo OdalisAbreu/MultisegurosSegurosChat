@@ -69,19 +69,19 @@ function MontoPorServ($vigencia_poliza, $serv_adc)
 		);
 		$rprec2 = mysql_fetch_array($qprec2);
 
-		if ($rprec2['id'] == 116 or $rprec2['id'] == 118 or $rprec2['id'] == 126) {
+		if ($rprec2['id'] == 116 or $rprec2['id'] == 118 or $rprec2['id'] == 126 or $rprec2['id'] == 134) {
 			$Servicios['casaConductor'] = $rprec2[$vigencia];
 		}
-		if ($rprec2['id'] == 101 or $rprec2['id'] == 119 or $rprec2['id'] == 123) {
+		if ($rprec2['id'] == 101 or $rprec2['id'] == 119 or $rprec2['id'] == 123 or $rprec2['id'] == 131) {
 			$Servicios['asistenciaVial'] = $rprec2[$vigencia];
 		}
-		if ($rprec2['id'] == 107 or $rprec2['id'] == 122 or $rprec2['id'] == 124) {
+		if ($rprec2['id'] == 107 or $rprec2['id'] == 122 or $rprec2['id'] == 124 or $rprec2['id'] == 135) {
 			$Servicios['accidentesPersonales'] = $rprec2[$vigencia];
 		}
 		if ($rprec2['id'] == 113 or $rprec2['id'] == 120) {
 			$Servicios['planPremium'] = $rprec2[$vigencia];
 		}
-		if ($rprec2['id'] == 108 or $rprec2['id'] == 121 or $rprec2['id'] == 125) {
+		if ($rprec2['id'] == 108 or $rprec2['id'] == 121 or $rprec2['id'] == 125 or $rprec2['id'] == 133) {
 			$Servicios['ultimosGastos'] = $rprec2[$vigencia];
 		}
 	}
@@ -164,13 +164,20 @@ function CiudadRep($id)
 		<td style="background-color:#1d4ed7;">FJ</td>
 		<td style="background-color:#1d4ed7;">Cod. Confirmación</td>
 		<?php
-		if ($_GET['aseguradora'] == 7 or $_GET['aseguradora'] == 5) {
+		if ($_GET['aseguradora'] == 7 or $_GET['aseguradora'] == 5 or $_GET['aseguradora'] == 6) {
 			echo '<td style="background-color:#1d4ed7;">Centro Del Automovilista</td>';
 		} else {
 			echo '<td style="background-color:#1d4ed7;">Casa del Conductor</td>';
 		}
 		?>
 		<td style="background-color:#1d4ed7;">Asistencia Vial (Grua)</td>
+		<?php
+		if ($_GET['aseguradora'] == 6) {
+			echo '<td style="background-color:#1d4ed7;">Cobertura vida, limite RD$250,000.00</td>';
+		} else {
+			echo '<td style="background-color:#1d4ed7;">Accidentes Personales</td>';
+		}
+		?>
 		<td style="background-color:#1d4ed7;">Accidentes Personales</td>
 		<td style="background-color:#1d4ed7;">Plan Premium</td>
 		<td style="background-color:#1d4ed7;">Ultimos Gastos</td>
