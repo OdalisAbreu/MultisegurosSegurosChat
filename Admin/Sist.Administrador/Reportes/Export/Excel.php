@@ -208,12 +208,14 @@ function CiudadRep($id)
 	);
 	while ($u = mysql_fetch_array($query)) {
 		if (substr_count($reversadas, "[" . $u['id'] . "]") > 0) {
+			//echo "Reversada";
 		} else {
 			$t++;
 			$RepMontoSeguro = RepMontoSeguro($u['id']);
 			$veh = explode("|", CrearVehiculo($u['id_vehiculo']));
 			//print_r($u['serv_adc']);
 			$ServMonto = MontoPorServ($u['vigencia_poliza'], $u['serv_adc']);
+			echo $u['vigencia_poliza'] . ' ' . $u['serv_adc'];
 			//print_r($ServMonto);
 			//		$ServMonto = $u['serv_adc'];
 			$precio = $RepMontoSeguro;
